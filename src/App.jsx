@@ -1,38 +1,18 @@
 import './App.css'
 import hero from './assets/hero.png'
+import Header from './components/Header'
+import Hero from './components/Hero'
 
 const App = () => {
   return (
     <div className="app">
-
-      <header className="header">
-        <div className="logo">🛍️ ReactShop</div>
-
-        <ul className="nav">
-          <li><a href="#produtos">Início</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-
-        <div className="header-actions">
-          <span className="icon-button">🔍</span>
-          <span className="icon-button">❤️</span>
-          <span className="icon-button cart">
-            🛒
-            <span className="badge">3</span>
-          </span>
-        </div>
-      </header>
-
-      <section className="banner">
-        <div className="banner-text">
-          <h1>Ofertas imperdíveis para você</h1>
-          <p>Até 30% de desconto em produtos selecionados. Aproveite!</p>
-          <button className="btn-primary">Ver ofertas</button>
-        </div>
-        <img className="banner-image" src={hero} alt="Banner de promoção da loja" />
-      </section>
-
+      < Header />
+      < Hero 
+        imagem = {hero}
+        titulo="Ofertas imperdíveis para você"
+        subitutlo="Até 30% de desconto em produtos selecionados. Aproveite!"
+        textoBotao="Ver ofertas"
+      />
       <section className="categories">
         <h2>Categorias</h2>
 
