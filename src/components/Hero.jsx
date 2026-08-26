@@ -1,4 +1,4 @@
-const Hero = (titulo, subtitulo , textoBotao, iamgem) => {
+const Hero = (titulo, subtitulo , textoBotao, imagem) => {
     return (
         <section className="banner">
             <div className="banner-text">
@@ -6,7 +6,7 @@ const Hero = (titulo, subtitulo , textoBotao, iamgem) => {
                 <p>{subtitulo}</p>
                 <button className="btn-primary">{textoBotao}</button>
             </div>
-            <img className="banner-image" src={props.imagem} alt="Banner de promoção da loja" />
+            <img className="banner-image" src={imagem} alt="Banner de promoção da loja" />
         </section>
     )
 }   

@@ -10,7 +10,7 @@ const App = () => {
       < Hero 
         imagem = {hero}
         titulo="Ofertas imperdíveis para você"
-        subitutlo="Até 30% de desconto em produtos selecionados. Aproveite!"
+        subtitulo="Até 30% de desconto em produtos selecionados. Aproveite!"
         textoBotao="Ver ofertas"
       />
       <section className="categories">
