@@ -1,6 +1,7 @@
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Header = () => {
     return (
@@ -8,9 +9,9 @@ const Header = () => {
             <div className="logo">🛍️ ReactShop</div>
 
             <ul className="nav">
-                <li><a href="#produtos">Início</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><Link to="/home">Início</Link></li>
+                <li><Link Link to="/produtos">Produtos</Link></li>
+                <li><Link Link to="/contato">Contato</Link></li>
             </ul>
 
             <div className="header-actions">
