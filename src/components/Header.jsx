@@ -1,3 +1,7 @@
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
+
 const Header = () => {
     return (
         <header className="header">
@@ -10,11 +14,10 @@ const Header = () => {
             </ul>
 
             <div className="header-actions">
-                <span className="icon-button">🔍</span>
-                <span className="icon-button">❤️</span>
-                <span className="icon-button cart">
-                    🛒
-                    <span className="badge">3</span>
+                <span className="icon-button"><FaMagnifyingGlass /></span>
+                <span className="icon-button"><FaHeart /></span>
+                <span className="icon-button cart"><FaShoppingCart />
+                    <span className="badge">+99</span>
                 </span>
             </div>
         </header>
