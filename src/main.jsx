@@ -6,9 +6,13 @@ import './index.css'
 import App from './App.jsx'
 import ProdutoPage from './pages/ProdutoPage.jsx';
 import ContatoPage from './pages/ContatoPage.jsx';
-import HomePage from './pages/HomePage.jsx';
+
 
 const router = createBrowserRouter([
+  {
+    path: "/home",
+    element: <App />,
+  },
   {
     path: "/produtos",
     element: <ProdutoPage/>,
@@ -16,10 +20,6 @@ const router = createBrowserRouter([
   {
     path: "/contato",
     element: <ContatoPage/>,
-  },
-  {
-    path: "/home",
-    element: <HomePage/>,
   },
 ]);
 
