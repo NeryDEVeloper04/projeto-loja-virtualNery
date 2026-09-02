@@ -10,10 +10,6 @@ import ContatoPage from './pages/ContatoPage.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/home",
-    element: <App />,
-  },
-  {
     path: "/produtos",
     element: <ProdutoPage/>,
   },
